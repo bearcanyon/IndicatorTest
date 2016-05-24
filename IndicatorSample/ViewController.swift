@@ -21,6 +21,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func tapAppleButton(sender: UIButton) {
+        addAppleIndicator()
+    }
+    
+    func addAppleIndicator() {
         indicator = UIActivityIndicatorView()
         indicator.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
         indicator.center = self.view.center
@@ -30,6 +34,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func tapSVProgressHUDButton(sender: UIButton) {
+        addSVProgressHUD()
+    }
+    
+    func addSVProgressHUD() {
         //        SVProgressHUD.show()
         //        SVProgressHUD.showWithStatus("読み込み中")
         //        SVProgressHUD.showSuccessWithStatus("成功！")//消える
